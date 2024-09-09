@@ -27,6 +27,7 @@ table {border-collapse: collapse; border-spacing: 0;}
     --clr-dark: #131118;
     --clr-dark-light: #262230;
     --clr-gray: #424146;
+    --clr-light-gray: #F3F3F3;
 }
 
 .container {
@@ -97,6 +98,75 @@ input::placeholder {
     width: 100%;
     margin: 35px 0 14px;
 }
+
+h3 {
+    font-size: 29px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+h1 {
+    font-size: 41px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+.logo {
+    width: 105px;
+}
+
+.button {
+    position: relative;
+    background-color: var(--clr-dark);
+    color: white;
+    font-weight: 300;
+    width: fit-content;
+    letter-spacing: 0.2px;
+    padding: 16px 21px;
+    box-shadow: 0px 10px var(--clr-dark) 12px;
+    text-decoration: none;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+.button:hover {
+    background-color: var(--clr-dark-light);
+}
+.button ion-icon {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+}
+
+.btn-icon {
+    padding-right: 45px;
+}
+
+a ion-icon {
+    font-size: 23px;
+    transition: 0.2s;
+    padding: 7px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+a ion-icon:hover {
+    color: white;
+    background-color: var(--clr-dark-light);
+}
 /* ~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~ */
 header {
     margin: 0 auto;
@@ -131,55 +201,31 @@ nav div {
     align-items: center;
     gap: 28px;
 }
-
-.logo {
-    width: 105px;
+/* ~~~~~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~~~~ */
+main {
+    width: 80%;
+    margin: 45px auto;
+    padding: 0 45px;
+    background-color: var(--clr-light-gray);
+    height: fit-content;
 }
 
-.button {
-    background-color: var(--clr-dark);
-    color: white;
-    font-weight: 300;
-    padding: 16px 21px;
-    box-shadow: 0px 10px var(--clr-dark) 12px;
-    text-decoration: none;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    -o-transition: 0.2s;
-}
-.button:hover {
-    background-color: var(--clr-dark-light);
+.main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-a ion-icon {
-    font-size: 23px;
-    transition: 0.2s;
-    padding: 7px;
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    -o-transition: 0.2s;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+.main-text p {
+    font-size: 21px;
 }
-a ion-icon:hover {
-    color: white;
-    background-color: var(--clr-dark-light);
+
+.main-text .button {
+    margin-top: 31px;
 }
 /* ~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~ */
 footer {
     background-color: var(--clr-dark);
-    position: fixed;
     bottom: 0;
     width: 100%;
     padding: 41px 0 17px;
