@@ -26,6 +26,76 @@ table {border-collapse: collapse; border-spacing: 0;}
 :root {
     --clr-dark: #131118;
     --clr-dark-light: #262230;
+    --clr-gray: #424146;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.list-title {
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 19px;
+}
+
+.field {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em;
+    background-color: transparent;
+    border: solid 1px white;
+    padding: 0.1em 1.3em;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.input-icon {
+    font-size: 25px;
+    fill: #ffffff;
+}
+
+.input-arrow {
+    font-size: 17px;
+    margin-top: 7px;
+}
+
+.input-field {
+    padding: 0.8em 1.3em;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+}
+
+.field input:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+}
+
+input::placeholder {
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.hr {
+    background-color: var(--clr-gray);
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 35px 0 14px;
 }
 /* ~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~ */
 header {
@@ -88,7 +158,7 @@ nav div {
     background-color: var(--clr-dark-light);
 }
 
-ion-icon {
+a ion-icon {
     font-size: 23px;
     transition: 0.2s;
     padding: 7px;
@@ -102,7 +172,43 @@ ion-icon {
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
 }
-ion-icon:hover {
+a ion-icon:hover {
     color: white;
     background-color: var(--clr-dark-light);
+}
+/* ~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~ */
+footer {
+    background-color: var(--clr-dark);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 41px 0 17px;
+    color: white;
+    font-weight: 305;
+    letter-spacing: 0.4px;
+}
+
+.footer-lsit {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-lsit ul {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-lsit ul li {
+    color: white;
+    font-weight: 305;
+    letter-spacing: 0.4px;
+    line-height: 23px;
+}
+
+.footer-lsit ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 305;
+    letter-spacing: 0.4px;
 }
